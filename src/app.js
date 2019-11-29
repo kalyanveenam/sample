@@ -6,7 +6,7 @@ const forecast=require('./utils/forecast');
 const path= require('path');
 const partial=require('hbs');
 const app=express();
-console.log(path.join(__dirname,'../public'))
+
 const publicDirPath=path.join(__dirname,'../public');
 const viewsDirPath=path.join(__dirname,'../Templates/views');
 const partialPath=path.join(__dirname,'../Templates/partials');
