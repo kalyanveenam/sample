@@ -1,11 +1,11 @@
-
 console.log('app is loading...!!!');
 
 const weatherform=document.querySelector('form');
 const search=document.querySelector('input')
 const content=document.querySelector('#message2');
 const errormsg=document.querySelector('#message1');
-
+const Temp=document.querySelector('#temp');
+const Rain=document.querySelector('#rain');
 weatherform.addEventListener('submit',(e)=>{
 e.preventDefault(); 
 
@@ -22,7 +22,10 @@ response.json().then((data)=>{
     }
   else{
 
-    content.textContent=data.summary;
+    content.textContent="Summary:"+data.summary;
+   Temp.textContent="Temperature:"+data.temperature;
+   Rain.textContent="Chance of rain:"+data.rainProb;
+    
   }
      })
 })

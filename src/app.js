@@ -57,11 +57,11 @@ app.get('/weather',(req,res)=>{
         forecast(dt,(error,response)=>{
              res.send({ 
                  summary:response.summ,
-                 temperature:(response.tempCel) ,
+                 temperature:(Math.floor(response.tempCel)) ,
                  rainProb:response.rainProb
              })
             console.log("Summary: "+response.summ);
-              console.log("Temperature: "+(response.tempCel)+" degrees");
+              console.log("Temperature: "+(Math.floor(response.tempCel))+" degrees");
               console.log("Probability of Rain: "+response.rainProb+"%");
           }) 
          }

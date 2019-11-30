@@ -1,4 +1,6 @@
 body{
+ background-color:black;
+ 
 color:#333333;
 font-family:Arial, Helvetica, sans-serif;
 margin: 0 auto;
@@ -14,7 +16,8 @@ font-size: large;
 header a{
     margin-bottom: 10px;
     font-family:serif;
-    color: black;
+    color: #333333;
+    columns: #333333;
     font-size: 25px;
   padding-right: 15px;
 text-decoration: none;
@@ -35,4 +38,20 @@ height: 200px;
 }
 .main-content{
 flex-grow: 1;    
+}
+button{
+  width:100px;
+  height:30px;
+  border:2px solid #34495e;
+  
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+  background:#34495e;
+}
+.setcol{
+  background-color:grey;
 }
