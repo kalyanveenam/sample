@@ -13,7 +13,7 @@ e.preventDefault();
 
 console.log('testing'); 
 console.log(search.value);
-fetch('http://localhost:3000/weather?location='+search.value+'').then((response)=>{
+fetch('/weather?location='+search.value+'').then((response)=>{
    
 response.json().then((data)=>{
     if(data.error)
